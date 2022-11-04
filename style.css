@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root{
     --pika-yellow:rgb(255, 213, 0);
     --pika-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    --pika-font:'Lato', sans-serif;
+    --pika-transition: all 200ms ease;
 }
 
 body{
@@ -15,6 +19,7 @@ body{
     position: relative;
     width: 430px;
     margin: auto;
+    font-family: var(--pika-font);
 }
 
 .head{
@@ -79,15 +84,35 @@ body{
     z-index: 10;
 }
 
-.button{
+button{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: rgb(0, 0, 0);
     border-radius: 10px;
+    background-color: #ffffff3f;
     border: 0.01px solid rgba(255, 255, 255, 0.266);
+    cursor: pointer;
+    transition: var(--pika-transition);
+}
+
+button:hover{
+    background-color: #ffffff90;
+}
+
+.operador, .buttons :nth-child(1), .buttons :nth-child(4){
+    background: rgba(255, 0, 0, 0.181);
+}
+
+.operador:hover, .buttons :nth-child(1):hover, .buttons :nth-child(4):hover{
+    background: rgba(0, 0, 0, 0.456);
+    color: white;
+}
+
+.equal:hover{
+    background: #000000;
 }
 
 .equal{
@@ -96,7 +121,11 @@ body{
     color: white;
 }
 
-.screen{
+.zero{
+    grid-column: span 2;
+}
+
+.display{
     width: 80%;
     height: 80px;
     position: absolute;
@@ -106,6 +135,24 @@ body{
     background-color: rgba(255, 255, 255, 0.855);
     backdrop-filter: blur(5px);
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display div{
+    height: 49%;
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.display div:first-child{
+    font-size: 30px;
+    overflow: hidden;
 }
 
 .cheek{

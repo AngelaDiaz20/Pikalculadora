@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
     <title>Pikalculator</title>
 </head>
 
@@ -20,32 +23,34 @@
                 <div class="eye"></div>
                 <div class="nose"></div>
                 <div class="cheek"></div>
-                <div id="resultado" class="screen"></div>
+                <div id="resultado" class="display">
+                    <div id="valor-anterior"></div>
+                    <div id="valor-actual"></div>
+                </div>
                 <div class="mouth"></div>
                 <div class="cheek"></div>
             </div>
 
             <div class="body">
                 <div class="buttons">
-                    <div id="clear" class="button">C</div>
-                    <div id="division" class="button">/</div>
-                    <div id="multiplication" class="button">x</div>
-                    <div id="backspace" class="button">DEL</div>
-                    <div id="seven" class="button">7</div>
-                    <div id="eight" class="button">8</div>
-                    <div id="nine" class="button">9</div>
-                    <div id="subtraction" class="button">-</div>
-                    <div id="four" class="button">4</div>
-                    <div id="five" class="button">5</div>
-                    <div id="six" class="button">6</div>
-                    <div id="addition" class="button">+</div>
-                    <div id="one" class="button">1</div>
-                    <div id="two" class="button">2</div>
-                    <div id="three" class="button">3</div>
-                    <div id="equal" class="button equal">=</div>
-                    <div id="percentage" class="button">%</div>
-                    <div id="zero" class="button">0</div>
-                    <div id="point" class="button">,</div>
+                    <button class="button" onclick="display.borrarTodo()">C</button>
+                    <button class="operador button" value="dividir">/</button>
+                    <button class="operador button" value="multiplicar">x</button>
+                    <button class="button" onclick="display.borrar()">&larr;</button>
+                    <button class="numero button">7</button>
+                    <button class="numero button">8</button>
+                    <button class="numero button">9</button>
+                    <button class="operador button" value="restar">-</button>
+                    <button class="numero button">4</button>
+                    <button class="numero button">5</button>
+                    <button class="numero button">6</button>
+                    <button class="operador button" value="sumar">+</button>
+                    <button class="numero button">1</button>
+                    <button class="numero button">2</button>
+                    <button class="numero button">3</button>
+                    <button class="operador button equal" value="igual">=</button>
+                    <button class="numero button zero">0</button>
+                    <button class="numero button">.</button>
                 </div>
             </div>
 
@@ -56,6 +61,5 @@
         </div>
         
     </main>
-    <script src="funcionalidad.js"></script>
 </body>
 </html>
