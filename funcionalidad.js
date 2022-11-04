@@ -6,69 +6,69 @@ var operacion;
 function init() {
     //variables
     var resultado = document.getElementById('resultado');
-    var reset = document.getElementById('reset');
-    var suma = document.getElementById('suma');
-    var resta = document.getElementById('resta');
-    var multiplicacion = document.getElementById('multiplicacion');
+    var clear = document.getElementById('clear');
+    var addition = document.getElementById('addition');
+    var subtraction = document.getElementById('subtraction');
+    var multiplication = document.getElementById('multiplication');
     var division = document.getElementById('division');
-    var igual = document.getElementById('igual');
-    var uno = document.getElementById('uno');
-    var dos = document.getElementById('dos');
-    var tres = document.getElementById('tres');
-    var cuatro = document.getElementById('cuatro');
-    var cinco = document.getElementById('cinco');
-    var seis = document.getElementById('seis');
-    var siete = document.getElementById('siete');
-    var ocho = document.getElementById('ocho');
-    var nueve = document.getElementById('nueve');
-    var cero = document.getElementById('cero');
+    var equal = document.getElementById('equal');
+    var one = document.getElementById('one');
+    var two = document.getElementById('two');
+    var three = document.getElementById('three');
+    var four = document.getElementById('four');
+    var five = document.getElementById('five');
+    var six = document.getElementById('six');
+    var seven = document.getElementById('seven');
+    var eight = document.getElementById('eight');
+    var nine = document.getElementById('nine');
+    var zero = document.getElementById('zero');
 }
 
 //Eventos de click
-uno.onclick = function (e) {
+one.onclick = function (e) {
     resultado.textContent = resultado.textContent + "1";
 }
-dos.onclick = function (e) {
+two.onclick = function (e) {
     resultado.textContent = resultado.textContent + "2";
 }
-tres.onclick = function (e) {
+three.onclick = function (e) {
     resultado.textContent = resultado.textContent + "3";
 }
-cuatro.onclick = function (e) {
+four.onclick = function (e) {
     resultado.textContent = resultado.textContent + "4";
 }
-cinco.onclick = function (e) {
+five.onclick = function (e) {
     resultado.textContent = resultado.textContent + "5";
 }
-seis.onclick = function (e) {
+six.onclick = function (e) {
     resultado.textContent = resultado.textContent + "6";
 }
-siete.onclick = function (e) {
+seven.onclick = function (e) {
     resultado.textContent = resultado.textContent + "7";
 }
-ocho.onclick = function (e) {
+eight.onclick = function (e) {
     resultado.textContent = resultado.textContent + "8";
 }
-nueve.onclick = function (e) {
+nine.onclick = function (e) {
     resultado.textContent = resultado.textContent + "9";
 }
-cero.onclick = function (e) {
+zero.onclick = function (e) {
     resultado.textContent = resultado.textContent + "0";
 }
-reset.onclick = function (e) {
+clear.onclick = function (e) {
     resetear();
 }
-suma.onclick = function (e) {
+addition.onclick = function (e) {
     operandoa = resultado.textContent;
     operacion = "+";
     limpiar();
 }
-resta.onclick = function (e) {
+subtraction.onclick = function (e) {
     operandoa = resultado.textContent;
     operacion = "-";
     limpiar();
 }
-multiplicacion.onclick = function (e) {
+multiplication.onclick = function (e) {
     operandoa = resultado.textContent;
     operacion = "*";
     limpiar();
@@ -78,7 +78,7 @@ division.onclick = function (e) {
     operacion = "/";
     limpiar();
 }
-igual.onclick = function (e) {
+equal.onclick = function (e) {
     operandob = resultado.textContent;
     resolver();
 }
