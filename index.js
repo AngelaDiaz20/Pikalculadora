@@ -12,3 +12,14 @@ botonesNumeros.forEach(boton => {
 botonesOperadores.forEach(boton => {
     boton.addEventListener('click', () => display.computar(boton.value))
 });
+
+
+
+/* Switch */
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+})

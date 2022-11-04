@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-dark.css">
+    <script src="https://kit.fontawesome.com/98bd21cde9.js" crossorigin="anonymous"></script>
     <script src="Display.js" type="text/javascript"></script>
     <script src="Calculadora.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript" defer></script>
@@ -14,10 +16,19 @@
 
 <body onload="init();">
     <main>
+        <button class="switch" id="switch">
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fa-solid fa-moon"></i></span>
+        </button>
+
         <div class="calculator">
 
             <div class="ear"></div>
             <div class="ear"></div>
+            <div class="head-gengar">
+                <div class="eye-gengar"></div>
+                <div class="eye-gengar"></div>
+            </div>
             <div class="head">
                 <div class="eye eye-one"></div>
                 <div class="eye"></div>

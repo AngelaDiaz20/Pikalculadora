@@ -11,14 +11,17 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: url(img/bg.jpg) center/cover;
+    background: url(img/bg1.jpg) center/cover;
+    /*background: white;*/
     overflow: hidden;
 }
+
 
 .calculator{
     position: relative;
     width: 430px;
     margin: auto;
+    height: 90%;
     font-family: var(--pika-font);
 }
 
@@ -84,7 +87,7 @@ body{
     z-index: 10;
 }
 
-button{
+.buttons button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +101,7 @@ button{
     transition: var(--pika-transition);
 }
 
-button:hover{
+.buttons button:hover{
     background-color: #ffffff90;
 }
 
@@ -305,4 +308,51 @@ button:hover{
     border-radius:49% 51% 46% 54% / 0% 0% 100% 100%;
     box-shadow: 8px 8px 20px inset rgb(72, 0, 0), 2px 2px 6px rgba(0, 0, 0, 0.395);
 }
+
+/*Switch*/
+.switch{
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor:pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch:active{
+    background: orange;
+    color: black;
+}
+
+.switch:active::after{
+    right: 0;
+    left: unset;
+    background-color: aqua;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: white;
+}
+
 
