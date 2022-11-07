@@ -355,4 +355,82 @@ body{
     color: white;
 }
 
+@media (max-width:768px){
+    body{
+        background: none;
+    }
 
+    .switch{
+        position: absolute;
+        top:5px;
+        right:5px;
+        z-index: 100;
+    }
+
+    .switch::after{
+        width: 29px;
+        height: 26px;
+    }
+
+    .switch span{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        display: block;
+        background: none;
+        color: white;
+    }
+
+    .ear, .eye, .nose,.cheek, .mouth, .arm, .tale, .foot, .body::before{
+        display: none;
+    }
+
+    .calculator{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .head{
+        border-radius: 0;
+        width: 100%;
+        height:35%;
+        position:unset;
+        background: white;
+        box-shadow: none;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .display{
+        position: unset;
+        width: 100%;
+        height: 90%;
+        border-radius: 0;
+    }
+
+    .display div{
+        font-size: 30px;
+    }
+    
+    .display div:first-child{
+        font-size: 45px;
+    }
+
+    .body{
+        border-radius: 0;
+        width: 100%;
+        height: 65%;
+    }
+
+    .buttons .button{
+        font-size: 30px;
+    }
+
+
+    /*Dark mode*/
+    body.dark .head-gengar, body.dark .eye-gengar, body.dark .head-gengar, body.dark .head-gengar::after{
+        display: none;
+    }
+
+}
