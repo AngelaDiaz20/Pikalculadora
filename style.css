@@ -14,8 +14,15 @@ body{
     background: url(img/bg1.jpg) center/cover;
     /*background: white;*/
     overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+main{
+    margin: auto;
+}
 
 .calculator{
     position: relative;
@@ -314,7 +321,9 @@ body{
     background-color: #343D5B;
     border-radius: 1000px;
     border: none;
-    position: relative;
+    position: absolute;
+    top: 40px;
+    right: 40px;
     cursor:pointer;
     display: flex;
     outline: none;
@@ -358,6 +367,8 @@ body{
 @media (max-width:768px){
     body{
         background: none;
+        overflow: auto;
+        display: unset;
     }
 
     .switch{
