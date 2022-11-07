@@ -11,17 +11,13 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: url(img/bg1.jpg) center/cover;
-    /*background: white;*/
+    /*background: url(img/bg1.jpg) center/cover;*/
+    background: white;
     overflow: hidden;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-main{
-    margin: auto;
 }
 
 .calculator{
@@ -322,7 +318,7 @@ main{
     border-radius: 1000px;
     border: none;
     position: absolute;
-    top: 40px;
+    top: 0px;
     right: 40px;
     cursor:pointer;
     display: flex;
@@ -353,6 +349,13 @@ main{
     right: 0;
     left: unset;
     background-color: aqua;
+}
+
+#main{
+    width: 100%;
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
 }
 
 .switch span{
