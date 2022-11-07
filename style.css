@@ -423,6 +423,11 @@ body{
         height: 65%;
     }
 
+    .buttons{
+        width: 100%;
+        height: 100%;
+    }
+
     .buttons .button{
         font-size: 30px;
     }
@@ -431,6 +436,15 @@ body{
     /*Dark mode*/
     body.dark .head-gengar, body.dark .eye-gengar, body.dark .head-gengar, body.dark .head-gengar::after{
         display: none;
+    }
+
+    body.dark .head{
+        background:#2e1c4aea;
+        background-image: none;
+    }
+
+    body.dark .calculator{
+        background:#2e1c4aea;
     }
 
 }
