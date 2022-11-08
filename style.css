@@ -11,8 +11,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*background: url(img/bg1.jpg) center/cover;*/
-    background: white;
+    background: url('img/bg.jpg') center/cover;
     overflow: hidden;
     height: 100vh;
     display: flex;
