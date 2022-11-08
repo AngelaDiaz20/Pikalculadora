@@ -11,11 +11,13 @@ const botonesOperadores = document.querySelectorAll('.operador');
 //Se crea una instancia de la clase Display (Script Display); declarando variable const, y asignando aquí la instancia a través de la palabra reservada "new", seguida del nombre de la clase y sus argumentos
 const display = new Display(displayValorAnterior, displayValorActual);
 
-//Función para cada uno de los botones. Cada vez que se presione un botón, este agregará (método agregarNumero (script display)) el número que corresponda al botón clickeado, a la pantalla de resultado (Incrusta número en el html) a través del innerHTML
+//Función para cada uno de los botones numéricos. Cada vez que se presione un botón, este agregará (método agregarNumero (script display)) el número que corresponda al botón clickeado, a la pantalla de resultado (Incrusta número en el html) a través del innerHTML
 botonesNumeros.forEach(boton => {
     boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML));
 });
 
+
+//Función para cada uno de los botones de operadores. Cada vez que se presione un botón, este agregará (método agregarNumero (script display)) el número que corresponda al botón clickeado, a la pantalla de resultado (Incrusta valor en el html) teniendo en cuenta el valor del botón
 botonesOperadores.forEach(boton => {
     boton.addEventListener('click', () => display.computar(boton.value))
 });
